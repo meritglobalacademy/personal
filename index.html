@@ -3,39 +3,74 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mohammad Alghouleh - Resume</title>
+<title>Merit Global Academy</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header>
-  <h1>Mohammad Alghouleh</h1>
-  <p class="tagline">Telecom Consultant | CEO | Business Leader</p>
+  <img src="assets/logo.png" alt="Merit Global Academy Logo" class="logo" />
+  <h1>Merit Global Academy</h1>
+  <p class="tagline">Empowering learners worldwide with quality online education</p>
 </header>
 
 <nav>
-  <a href="#about">About Me</a>
+  <a href="#business-plan">Business Plan</a>
+  <a href="#courses">Courses</a>
   <a href="#resume">Resume</a>
+  <a href="#investors">Investors</a>
   <a href="#contact">Contact</a>
-  <a href="MeritGlobalAcademy_BusinessPlan.pdf" target="_blank">Business Plan</a>
-  <a href="MohammadAlghouleh_Resume.pdf" target="_blank">Download Resume</a>
 </nav>
 
 <main>
-  <section id="about">
-    <h2>About Me</h2>
+  <section id="business-plan">
+    <h2>Business Plan Summary</h2>
     <p>
-      With over 20 years of experience in telecommunications, including GSM, LTE, IMS, and VoIP, I bring a wealth of knowledge and leadership to international business and education initiatives.
+      Merit Global Academy is an innovative international education platform focused on delivering accessible, accredited online learning in STEM, Telecom, and Business for underserved regions.
     </p>
+    <p>
+      We offer live and asynchronous courses, career coaching, visa support, and more. Hosted on a secure EU-compliant LMS, we aim to empower learners across the Middle East, Africa, and Europe.
+    </p>
+  </section>
+
+  <section id="courses">
+    <h2>Courses Offered</h2>
+    <h3>Core Curriculum (Estonia-based)</h3>
+    <ul>
+      <li>Mathematics (Grades 1–12)</li>
+      <li>Physics</li>
+      <li>Chemistry</li>
+      <li>Biology</li>
+      <li>Computer Science</li>
+      <li>Telecommunications Fundamentals</li>
+      <li>Business Studies</li>
+      <li>Social Studies</li>
+      <li>Religion & Ethics (Global Perspective)</li>
+      <li>Languages: English (primary)</li>
+    </ul>
+    <h3>Additional Language Courses</h3>
+    <ul>
+      <li>Arabic</li>
+      <li>Turkish</li>
+      <li>French</li>
+      <li>Spanish</li>
+    </ul>
   </section>
 
   <section id="resume">
     <h2>Professional Resume</h2>
-    <ul>
-      <li>Telecommunications Consultant specializing in network operations and VoIP</li>
-      <li>CEO and Founder of Merit Global Academy</li>
-      <li>Expert in international trade and startup development</li>
-      <li>Experienced in sales management and client relations</li>
-    </ul>
+    <p>
+      Experienced Telecommunications Consultant and Business Owner with a strong background in GSM, LTE, IMS, VoIP, and international trade.
+    </p>
+    <p>
+      Skilled in network operations, sales management, and startup development.
+    </p>
+  </section>
+
+  <section id="investors">
+    <h2>Investor Information</h2>
+    <p>
+      We welcome investors with educational experience as well as those providing financial support. Our vision includes launching an online school academy with expected revenue growth and operational offices in Estonia, California, and Jordan.
+    </p>
   </section>
 
   <section id="contact">
@@ -46,8 +81,32 @@
   </section>
 </main>
 
+<!-- Simple chatbot placeholder -->
+<div id="chatbot">
+  <button id="chatbot-toggle">Chat with us</button>
+  <div id="chatbot-window" style="display:none;">
+    <p><em>Welcome to Merit Global Academy assistant! How can I help you today?</em></p>
+    <!-- Chat interface would be integrated here -->
+  </div>
+</div>
+
 <footer>
-  <p>© 2025 Mohammad Alghouleh. All rights reserved.</p>
+  <p>© 2025 Merit Global Academy. All rights reserved.</p>
 </footer>
+
+<script>
+  // Chatbot toggle script
+  const toggleBtn = document.getElementById('chatbot-toggle');
+  const chatWindow = document.getElementById('chatbot-window');
+  toggleBtn.addEventListener('click', () => {
+    if (chatWindow.style.display === 'none') {
+      chatWindow.style.display = 'block';
+      toggleBtn.textContent = 'Close Chat';
+    } else {
+      chatWindow.style.display = 'none';
+      toggleBtn.textContent = 'Chat with us';
+    }
+  });
+</script>
 </body>
 </html>
